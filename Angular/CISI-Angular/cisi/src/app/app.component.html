@@ -1,0 +1,98 @@
+<!-- <div class="container">
+  <div class="box">
+    <input type="text" (keypress)='clearError()' placeholder="Enter Principle" #p/>
+    <input type="text" (keypress)='clearError()' placeholder="Enter Rate" #r/>
+    <input type="text" (keypress)='clearError()' placeholder="Enter time in Years" #t/>
+    <button type="button" (click)="checkValidation()">Calculate</button>
+    <div class="error" *ngIf ="error!= ''">{{error}}</div>
+    <div class="intrest" *ngIf ="si!= 0" >Simple Intrest: {{si}}</div>
+    <div class="intrest" *ngIf ="ci!= 0">Compund Intrest: {{ci}}</div>
+  </div>
+</div> -->
+
+<!-- if-else and switch -->
+
+<!-- <span *ngIf="a==1; then b1 else b2"></span>
+
+<ng-template #b1>
+  <div class="box">
+    Sunday
+  </div>
+</ng-template>
+
+<ng-template #b2>
+  <div class="box">
+    Monday
+  </div>
+</ng-template> -->
+
+<!-- switch case condition -->
+
+<!-- <input type="text" #t1 (keyup)="changeDay()"/>
+
+<div [ngSwitch]="a">
+
+
+  <div class="box" *ngSwitchCase="1">Sunday</div>
+  <div class="box" *ngSwitchCase="2">Monday</div>
+  <div class="box" *ngSwitchCase="3">Tuesday</div>
+  <div class="box" *ngSwitchCase="4">Wednesday</div>
+  <div class="box" *ngSwitchCase="5">Trusday</div>
+  <div class="box" *ngSwitchCase="6">Friday</div>
+  <div class="box" *ngSwitchCase="7">Saturday</div>
+  <div *ngSwitchDefault class="box">Invalid</div>
+</div> -->
+<!-- for loop for getting values from array in angular -->
+ {{data | json}}
+ <br/><br/>
+
+  <table [border]="1" [cellSpacing]="0" [cellPadding]='10'>
+    <thead>
+      <tr>
+        <th>
+          ID
+        </th>
+        
+        <th>
+          Name
+        </th>
+        <th>
+          Class
+        </th>
+        <th>
+          Date of Birth
+        </th>
+        <th>
+          Fee
+        </th>
+        <th>
+          Address
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{i.id | pipe1:'1'}}</td>
+        <td>{{i.name | titlecase}}</td>
+        <td>{{i.Qualification | uppercase}}</td>
+        <td>{{i.dob | date}}</td>
+        <td>{{i.fee}}</td>
+        <td>{{i.city| lowercase}}</td>
+        <td><a href="">Go</a></td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- <div>
+    <h3>Enter an amount:</h3>
+    <input type="text"  placeholder="Type amount here" />
+    <button (click)="convertAmountToWords()">Convert to Words</button>
+    <p>Amount in Words: {{ amountInWords }}</p>
+  </div> -->
+  
+
+

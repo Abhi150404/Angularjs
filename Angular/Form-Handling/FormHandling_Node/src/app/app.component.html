@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col md-4">
+            <div class="card">
+                <div class="card-header pb-2">
+                    <h5>Register Here</h5>
+
+                </div>
+                <div class="card-body">
+                    <form #userReg='ngForm' (ngsubmit)=savedata(userReg)>
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <input type="text" class="form-control" name="user_name" ngModel/>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile</label>
+                            <input type="text" class="form-control" name="mob" ngModel/>
+                        </div>
+                        <div class="form-group">
+                            <label>Date Of Birth</label>
+                            <input type="date" class="form-control" name="dob" ngModel/>
+                        </div>
+                        <input type="submit" value="Register Here" class="btn btn-success btn-block"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

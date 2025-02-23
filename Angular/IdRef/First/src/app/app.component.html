@@ -1,0 +1,18 @@
+<!-- <h1>Thanks for Learning Angular </h1>
+<div class="box"></div>
+
+<h2>{{website_name}}</h2>
+<input type="text" #d1/>
+<button (click) ="abc(d1)">See</button>
+<input type="text" #check/>
+<button (click)="iseven(check)">Check</button> -->
+<div class="container">
+    <div class="box">
+        <input type="text" placeholder="Enter Principal" #p (keypress)="clearError()"/>
+        <input type="text" placeholder="Enter rate" #r (keypress)="clearError()"/>
+        <input type="text" placeholder="Enter time in year" #t (keypress)="clearError()"/>
+        <button type="button" (click)="checkValidation()">Calculate</button>
+        <div class="error" ngif="error!=">{{error}}</div>
+        <div class="total" #total_num>
+    </div>
+</div>

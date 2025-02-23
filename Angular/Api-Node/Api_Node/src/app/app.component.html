@@ -1,0 +1,18 @@
+<table [border]="1" [cellSpacing]="0" [cellPadding]="10" *ngIf="data!=''">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Mobile</th>
+      <th>Date Of Birth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of data">
+      <td>{{i.userid}}</td>
+      <td>{{i.user_name}}</td>
+      <td>{{i.mob}}</td>
+      <td>{{i.dob | date}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,50 @@
+<!-- <p>details works!</p> -->
+<!-- <h2>{{token}}</h2> -->
+
+ <!-- <h4>{{singledata|json}}</h4> -->
+ <table [border]="1" [cellSpacing]="0" [cellPadding]='10' *ngIf="singledata!=''">
+    <thead>
+        <tr>
+          <th>
+            ID
+          </th>
+          <th>Image</th>
+         
+          <th>
+           Title
+          </th>
+          <th>
+            Rating
+          </th>
+          <th>
+            Tags
+          </th>
+          <th>
+            Discount%
+          </th>
+          <th>
+            Warranty
+          </th>
+          <th>
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor ='let i of singledata'>
+          <td>
+            {{i.id}}
+          </td>
+          <td><img src="{{i.images}}" /></td>
+          <td>{{i.title}}</td>
+          <td>{{i.rating}}</td>
+          <td>{{i.tags}}</td>
+          <td>{{i.discountPercentage}}</td>
+          <td>{{i.warrantyInformation}}</td>
+          <td>{{i.description}}</td>
+         
+        </tr>
+      </tbody>
+
+ </table>
+
